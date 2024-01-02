@@ -6,7 +6,7 @@ class Text {
   constructor(text, position=0) {
     try {
       const request = new XMLHttpRequest();
-      request.open('GET', `alice/texts/${text}.txt`, false);
+      request.open('GET', `texts/${text}.txt`, false);
       request.send(null);
       
       if (request.status === 200) {
