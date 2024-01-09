@@ -216,6 +216,13 @@ footer {
   align-items: flex-end;
 }
 
+@media screen and (max-device-width: 899px) and (orientation: portrait),
+screen and (max-device-width: 899px) and (orientation: landscape) {
+  footer {
+    position: static;
+  }
+}
+
 #footerText {
   padding-left: 10px;
 }
