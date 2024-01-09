@@ -250,7 +250,8 @@ footer {
 }
 
 @media screen and (max-device-width: 899px) and (orientation: portrait),
-screen and (max-device-width: 899px) and (orientation: landscape) {
+screen and (max-device-width: 899px) and (orientation: landscape),
+screen and (max-width: 899px) {
   footer {
     position: static;
   }
