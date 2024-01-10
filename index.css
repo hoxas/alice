@@ -145,6 +145,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  pointer-events: auto;
 }
 
 .linkIcon svg {
@@ -247,6 +248,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  pointer-events: none;
 }
 
 @media screen and (max-device-width: 899px) and (orientation: portrait),
