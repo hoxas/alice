@@ -259,6 +259,24 @@ screen and (max-width: 899px) {
   }
 }
 
+@media screen and (max-device-width: 398px) and (orientation: portrait),
+screen and (max-device-width: 398px) and (orientation: landscape),
+screen and (max-width: 398px) {
+  footer {
+    flex-direction: column;
+    align-items: center;
+    flex-flow: column-reverse;
+  }
+  
+  footer:after {
+    /* content: ' † ཐི❤︎ཋྀ †'; */
+    /* content: '🕸️𓆩♡𓆪🕸️'; */
+    content: '⋆༺𓆩☠︎︎𓆪༻⋆';
+    font-size: 25px;
+    color: #333;
+  }
+}
+
 #footerText {
   padding-left: 10px;
 }
