@@ -6,8 +6,10 @@ mainCanvas.width = window.innerWidth;
 mainCanvas.height = window.innerHeight;
 
 window.addEventListener('resize', () => {
-  mainCanvas.width = window.innerWidth;
-  mainCanvas.height = window.innerHeight;
+  if (window.innerWidth >= 900 || window.innerWidth !== mainCanvas.width) {
+    mainCanvas.width = window.innerWidth;
+    mainCanvas.height = window.innerHeight;
+  }
 });
 
 function randomChoice(arr) {
