@@ -33,7 +33,7 @@ body {
   height: 100%;
   align-items: end; */
   font-size: 5vw;
-  color: #222;
+  color: #222 !important;
   z-index: -1;
   display: flex;
   font-family: 'UnifrakturCook', cursive;
@@ -163,24 +163,24 @@ body {
 #subserviente {
   font-family: 'Meddon', cursive;
   font-size: 35px;
-  color: #800;
+  color: #800 !important;
 }
 
 #subsubsub {
   font-family: 'Smooch', cursive;
   font-size: 50px;
-  color: #300;
+  color: #300 !important;
 }
 
 #doloremors {
   font-family: 'Quintessential', serif;
   font-size: 45px;
-  color: #fff;
+  color: #fff !important;
 }
 
 #alice {
   font-family: 'UnifrakturCook', cursive;
-  color: #707;
+  color: #707 !important;
 }
 
 #links a,
@@ -201,7 +201,7 @@ footer a {
 
 #links a:hover .linkIcon,
 footer a:hover .linkIcon {
-  color: #800;
+  color: #800 !important;
 }
 
 .linksButtons {
@@ -214,19 +214,19 @@ footer a:hover .linkIcon {
 
 
 .spotify {
-  color: #1DB954;
+  color: #1DB954 !important;
 }
 
 .bandcamp {
-  color: #629aa9;
+  color: #629aa9 !important;
 }
 
 .soundcloud {
-  color: #ff8800;
+  color: #ff8800 !important;
 }
 
 .discord {
-  color: #5865F2;
+  color: #5865F2 !important;
   filter: saturate(0.5);
 }
 
@@ -273,7 +273,7 @@ screen and (max-width: 398px) {
     /* content: '🕸️𓆩♡𓆪🕸️'; */
     content: '⋆༺𓆩☠︎︎𓆪༻⋆';
     font-size: 25px;
-    color: #333;
+    color: #333 !important;
   }
 }
 
