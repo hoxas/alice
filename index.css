@@ -241,6 +241,10 @@ footer a:hover .linkIcon {
   filter: saturate(1) hue-rotate(140deg) brightness(0.8);
 }
 
+#divider {
+  text-align: center;
+}
+
 footer {
   position: fixed;
   bottom: 0;
@@ -251,32 +255,32 @@ footer {
   pointer-events: none;
 }
 
+#footerText {
+  padding-left: 10px;
+}
+
 @media screen and (max-device-width: 899px) and (orientation: portrait),
 screen and (max-device-width: 899px) and (orientation: landscape),
 screen and (max-width: 899px) {
   footer {
     position: static;
-  }
-}
-
-@media screen and (max-device-width: 398px) and (orientation: portrait),
-screen and (max-device-width: 398px) and (orientation: landscape),
-screen and (max-width: 398px) {
-  footer {
-    flex-direction: column;
-    align-items: center;
-    flex-flow: column-reverse;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
   }
   
-  footer:after {
-    /* content: ' † ཐི❤︎ཋྀ †'; */
-    /* content: '🕸️𓆩♡𓆪🕸️'; */
-    content: '⋆༺𓆩☠︎︎𓆪༻⋆';
-    font-size: 25px;
-    color: #333 !important;
+  #divider {
+    display: block !important;
   }
-}
-
-#footerText {
-  padding-left: 10px;
+  
+  #footerText {
+    width: 100%;
+    padding-left: 0;
+    text-align: center;
+  }
+  
+  footer .linksButtons {
+    width: 100%;
+    padding: 0 10px;
+    flex-wrap: wrap;
+  }
 }
