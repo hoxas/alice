@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+  font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: #ccc;
+}
+
+header {
+  font-size: 80px;
+  text-align: center;
+  font-weight: 800;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a:hover {
+  color: #800;
+}
+
+a:hover::before {
+  content: "☠";
+  font-size: 30px;
+  margin-right: 10px;
+}
+
+#main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#post {
+  font-size: 30px;
+  padding: 0 20px;
+}
+
+#postHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#backButton {
+  font-size: 60px;
+  background-color: transparent;
+  border: none;
+  color: #800;
+  cursor: pointer;
+}
+
+#postTitle {
+  display: flex;
+  flex-direction: column;
+}
+
+#postTitle h2 {
+  font-size: 40px;
+  font-weight: 800;
+  padding: 0;
+  margin: 0;
+}
+
+#postContent {
+  text-align: center;
+}
+
+.eb-garamond {
+  font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.playfair-display {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
