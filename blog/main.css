@@ -94,8 +94,6 @@ a:hover .icon {
 
 #backButton {
   font-size: 60px;
-  color: #800;
-  cursor: pointer;
 }
 
 #postTitle {
@@ -110,17 +108,35 @@ a:hover .icon {
   margin: 0;
 }
 
+@keyframes bleeding {
+  0% {
+    text-shadow: 0px 0px 0px #000;
+  }
+  100% {
+    text-shadow:
+      0px 4px 1px #A00000,
+      0px 6px 1px #900000,
+      0px 8px 1px #800000,
+      0px 10px 1px #700000,
+      0px 12px 1px #600000,
+      0px 14px 1px #500000,
+      0px 16px 1px #400000,
+      0px 18px 1px #300000;
+      /* 0px -4px 1px #A00000,
+      0px -6px 1px #900000,
+      0px -8px 1px #800000,
+      0px -10px 1px #700000,
+      0px -12px 1px #600000,
+      0px -14px 1px #500000,
+      0px -16px 1px #400000,
+      0px -18px 1px #300000; */
+  }
+}
+
 #postContent {
   text-align: center;
-  text-shadow:
-  0px 4px 1px #A00000,
-  0px 6px 1px #900000,
-  0px 8px 1px #800000,
-  0px 10px 1px #700000,
-  0px 12px 1px #600000,
-  0px 14px 1px #500000,
-  0px 16px 1px #400000,
-  0px 18px 1px #300000;
+  animation: bleeding 20s infinite alternate;
+  
 }
 
 .eb-garamond {
