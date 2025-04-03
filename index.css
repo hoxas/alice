@@ -1,0 +1,286 @@
+* {
+  box-sizing: border-box;
+}
+
+@keyframes background {
+  0% {
+    background-color: black;
+  }
+  
+  50% {
+    background-color: #200;
+  }
+  
+  100% {
+    background-color: black;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: #999;
+  font-family: 'Quintessential', serif;
+  animation: background 10s ease-in-out infinite;
+}
+
+.canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* width: 50%;
+  height: 100%;
+  align-items: end; */
+  font-size: 5vw;
+  color: #222 !important;
+  z-index: -1;
+  display: flex;
+  font-family: 'UnifrakturCook', cursive;
+}
+
+@keyframes canvas {
+  0% {
+    transform: scale(1, 1);
+  }
+  
+  50% {
+    transform: scale(1.5, 1.5);
+  }
+  
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+@keyframes canvasLinesColor {
+  0% {
+    filter: brightness(1);
+  }
+  
+  50% {
+    filter: brightness(0);
+  }
+  
+  100% {
+    filter: brightness(1);
+  }
+
+}
+
+#mainCanvas {
+  animation: canvas 60s ease-in-out infinite, canvasLinesColor 40s ease-in-out infinite;
+}
+
+#leftCanvas {
+  padding-right: 15vw;
+}
+
+#rightCanvas {
+  top: 0;
+  left: 50%;
+  justify-content: flex-end;
+  text-align: end;
+  padding-left: 15vw;
+}
+
+#mainContent {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+#mainContent h1 {
+  font-family: 'UnifrakturCook', cursive;
+}
+
+@keyframes avatar {
+  0% {
+    transform: scale(1, 1) skew(-5deg, 0deg);
+  }
+  
+  100% {
+    transform: scale(1.2, 1) skew(5deg, 0deg)
+  }
+}
+
+#avatar {
+  width: 250px;
+  height: 250px;
+  margin: 10px 0;
+  object-fit: contain;
+  animation: avatar 5s ease-in-out alternate-reverse infinite;
+}
+
+#links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#links ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#links li {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.linkIcon {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(25, 0, 0, 0.5);
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: auto;
+}
+
+.linkIcon svg {
+  width: 35px;
+  height: 35px;
+  transition: color 0.5s ease-in-out;
+}
+
+.linkName {
+  margin-top: 20px;
+  padding: 0 20px;
+  font-size: 40px;
+}
+
+#subserviente {
+  font-family: 'Meddon', cursive;
+  font-size: 35px;
+  color: #800 !important;
+}
+
+#subsubsub {
+  font-family: 'Smooch', cursive;
+  font-size: 50px;
+  color: #300 !important;
+}
+
+#doloremors {
+  font-family: 'Quintessential', serif;
+  font-size: 45px;
+  color: #fff !important;
+}
+
+#alice {
+  font-family: 'UnifrakturCook', cursive;
+  color: #707 !important;
+}
+
+#links a,
+footer a {
+  width: 60px;
+  height: 60px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border-radius: 50%;
+  overflow: hidden;
+  font-size: 20px;
+  transition: color 0.5s ease-in-out;
+  margin: 10px;
+}
+
+#links a:hover .linkIcon,
+footer a:hover .linkIcon {
+  color: #800 !important;
+}
+
+.linksButtons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10px 0;
+  align-items: center;
+}
+
+
+.spotify {
+  color: #1DB954 !important;
+}
+
+.bandcamp {
+  color: #629aa9 !important;
+}
+
+.soundcloud {
+  color: #ff8800 !important;
+}
+
+.discord {
+  color: #5865F2 !important;
+  filter: saturate(0.5);
+}
+
+.rym img {
+  height: 85%;
+  width: 85%;
+  transition: filter 0.5s ease-in-out;
+  filter: saturate(0.5);
+}
+
+.rym:hover img {
+  filter: saturate(1) hue-rotate(140deg) brightness(0.8);
+}
+
+#divider {
+  text-align: center;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  pointer-events: none;
+}
+
+#footerText {
+  padding-left: 10px;
+}
+
+@media screen and (max-device-width: 899px) and (orientation: portrait),
+screen and (max-device-width: 899px) and (orientation: landscape),
+screen and (max-width: 899px) {
+  footer {
+    position: static;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+  }
+  
+  #divider {
+    display: block !important;
+  }
+  
+  #footerText {
+    width: 100%;
+    padding-left: 0;
+    text-align: center;
+  }
+  
+  footer .linksButtons {
+    width: 100%;
+    padding: 0 10px;
+    flex-wrap: wrap;
+  }
+}

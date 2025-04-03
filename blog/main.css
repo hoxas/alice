@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+  font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: #ccc;
+}
+
+header {
+  font-size: 80px;
+  text-align: center;
+  font-weight: 800;
+  text-shadow: 5px 5px 0 #900, 10px 10px 0 #400;
+  animation: shadow-dance 2s ease-in-out infinite;
+}
+
+@keyframes shadow-dance {
+  0%, 100% {
+      text-shadow: 5px 5px 0 #900, 10px 10px 0 #400;
+  }
+  50% {
+      text-shadow: -5px -5px 0 #400, -10px -10px 0 #900;
+  }
+}
+
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a:hover {
+  color: #800;
+}
+
+a .icon {
+  font-size: 30px;
+  margin-right: 10px;
+}
+
+@keyframes iconAppear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+a:hover .icon {
+  visibility: visible !important;
+  animation: iconAppear 0.8s ease-in-out;
+}
+
+#main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.postLink {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.createdAt {
+  margin-left: 10px;
+}
+
+#post {
+  font-size: 30px;
+  padding: 0 20px;
+}
+
+#postHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#backButton {
+  font-size: 60px;
+  color: #800;
+  cursor: pointer;
+}
+
+#postTitle {
+  display: flex;
+  flex-direction: column;
+}
+
+#postTitle h2 {
+  font-size: 40px;
+  font-weight: 800;
+  padding: 0;
+  margin: 0;
+}
+
+#postContent {
+  text-align: center;
+}
+
+.eb-garamond {
+  font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.playfair-display {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
