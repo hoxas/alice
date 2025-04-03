@@ -1,0 +1,19 @@
+{
+  "name": "ak47",
+  "version": "1.0.0",
+  "homepage": "https://hoxas.github.io/alice/",
+  "scripts": {
+    "build": "node build.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d ."
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "jsdom": "^26.0.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
+  }
+}
