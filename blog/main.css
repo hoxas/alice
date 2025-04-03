@@ -43,10 +43,23 @@ a:hover {
   color: #800;
 }
 
-a:hover::before {
-  content: "☠";
+a .icon {
   font-size: 30px;
   margin-right: 10px;
+}
+
+@keyframes iconAppear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+a:hover .icon {
+  visibility: visible !important;
+  animation: iconAppear 0.8s ease-in-out;
 }
 
 #main {
@@ -54,6 +67,17 @@ a:hover::before {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.postLink {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.createdAt {
+  margin-left: 10px;
 }
 
 #post {
@@ -70,8 +94,6 @@ a:hover::before {
 
 #backButton {
   font-size: 60px;
-  background-color: transparent;
-  border: none;
   color: #800;
   cursor: pointer;
 }
