@@ -230,6 +230,10 @@ footer a:hover .linkIcon {
   filter: saturate(0.5);
 }
 
+.scaleTool {
+  color: #eeeeee
+}
+
 .rym img {
   height: 85%;
   width: 85%;
